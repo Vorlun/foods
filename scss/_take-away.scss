@@ -1,0 +1,89 @@
+.take-away {
+  height: 658px;
+  margin-top: 120px;
+
+  &__bg {
+    height: 518px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: #fbf1e7;
+      opacity: 0.4;
+      z-index: 0;
+    }
+  }
+
+  &__container {
+    width: 1440px;
+    margin: 0 auto;
+    height: 658px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__card {
+    width: 555px;
+    height: 275px;
+    border-radius: 20px;
+    margin-left: 247px;
+  }
+
+  &__phone {
+    position: absolute;
+    right: 244px;
+    bottom: 0;
+    height: 651px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    opacity: 0.7;
+    color: $bg-py;
+  }
+  &__name {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 40.63px;
+    letter-spacing: 0;
+    margin: 5px 0;
+  }
+  &__desc {
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.7;
+    color: $clr-blc;
+    margin: 24px 0;
+  }
+  &__buttons {
+    width: 372px;
+    display: flex;
+    justify-content: space-between;
+    button:nth-child(1) {
+      background: $clr-blc;
+      width: 163px;
+      height: 48px;
+      border-radius: 5px;
+    }
+    button:nth-child(2) {
+      background: none;
+      border: 1px solid #ddd;
+      width: 163px;
+      height: 48px;
+      border-radius: 5px;
+    }
+  }
+}
