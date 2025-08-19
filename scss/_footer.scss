@@ -1,0 +1,76 @@
+.footer {
+  background: #252525;
+  padding: 137px 0;
+  color: #fff;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    flex: 1;
+    width: 262px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &--logo {
+      flex: 1.5; 
+    }
+  }
+
+  &__logo {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  &__item {
+    font-size: 14px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: gold;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+
+    a {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+
+      &:hover {
+        background: gold;
+      }
+    }
+  }
+}
